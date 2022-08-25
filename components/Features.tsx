@@ -56,7 +56,7 @@ export default function Features() {
                   "
               >
                 <Image
-                  src="https://http2.mlstatic.com/D_NQ_NP_795917-MLB32627700806_102019-O.jpg"
+                  src="https://blog.sympla.com.br/wp-content/uploads/2022/06/como-organizar-um-campeonato-de-video-game-capa-2.png"
                   width={500}
                   height={500}
                 />
