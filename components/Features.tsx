@@ -141,7 +141,7 @@ export default function Features() {
               <h4 className="font-semibold text-xl text-dark mb-3">Feiras</h4>
               <p className="text-body-color">
               Promover feira de ciências, evento aberto ao público para interagir escola e comunidade; e 
-              também, buscar parcerias com profissionais para garantir a sustentabilidade;
+              também, buscar parcerias com profissionais para garantir a sustentabilidade
               </p>
             </div>
           </div>
