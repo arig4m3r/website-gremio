@@ -93,9 +93,9 @@ export default function Features() {
                   "
               >
                 <Image
-                  src="https://sm.ign.com/ign_br/screenshot/default/025pikachu-os-anime-4_3pym.png"
-                  width={500}
-                  height={500}
+                  src="https://media.istockphoto.com/vectors/cartoon-people-on-music-festival-vector-illustration-flat-characters-vector-id1219009474?k=20&m=1219009474&s=170667a&w=0&h=GUxYezSG8W05khRiAiIQWpIZIAfeMweVCLCrSvItcZc="
+                  width={600}
+                  height={290}
                 />
               </div>
               <h4 className="font-semibold text-xl text-dark mb-3">Festivais</h4>
@@ -130,9 +130,9 @@ export default function Features() {
                   "
               >
                 <Image
-                  src="https://sm.ign.com/ign_br/screenshot/default/025pikachu-os-anime-4_3pym.png"
-                  width={500}
-                  height={500}
+                  src="https://static.vecteezy.com/ti/vetor-gratis/p3/202093-feira-de-ciencias-2es-gr%C3%A1tis-vetor.jpg"
+                  width={933}
+                  height={632}
                 />
               </div>
               <h4 className="font-semibold text-xl text-dark mb-3">Feiras</h4>
