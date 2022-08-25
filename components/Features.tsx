@@ -30,7 +30,7 @@ export default function Features() {
           </div>
         </div>
         <div className="flex flex-wrap -mx-4">
-          <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+        <div className="w-full md:w-1/2 lg:w-1/3 px-4">
             <div
               className="
                p-10
@@ -56,9 +56,9 @@ export default function Features() {
                   "
               >
                 <Image
-                  src="https://blog.sympla.com.br/wp-content/uploads/2022/06/como-organizar-um-campeonato-de-video-game-capa-2.png"
-                  width={500}
-                  height={500}
+                  src="https://media.istockphoto.com/vectors/cartoon-people-on-music-festival-vector-illustration-flat-characters-vector-id1219009474?k=20&m=1219009474&s=170667a&w=0&h=GUxYezSG8W05khRiAiIQWpIZIAfeMweVCLCrSvItcZc="
+                  width={340}
+                  height={320}
                 />
               </div>
               <h4 className="font-semibold text-xl text-dark mb-3">Campeonatos</h4>
