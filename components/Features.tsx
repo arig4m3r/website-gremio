@@ -56,9 +56,46 @@ export default function Features() {
                   "
               >
                 <Image
-                  src="https://media.istockphoto.com/vectors/cartoon-people-on-music-festival-vector-illustration-flat-characters-vector-id1219009474?k=20&m=1219009474&s=170667a&w=0&h=GUxYezSG8W05khRiAiIQWpIZIAfeMweVCLCrSvItcZc="
+                  src="https://blog.sympla.com.br/wp-content/uploads/2022/06/como-organizar-um-campeonato-de-video-game-capa-2.png"
                   width={340}
                   height={320}
+                />
+              </div>
+              <h4 className="font-semibold text-xl text-dark mb-3">Campeonatos</h4>
+              <p className="text-body-color">
+                Realizar campeonato de games, interclasses, cartas, e leitura coletiva
+              </p>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+            <div
+              className="
+               p-10
+               md:px-7
+               xl:px-10
+               rounded-[20px]
+               bg-white
+               shadow-md
+               hover:shadow-lg
+               mb-8
+               "
+            >
+              <div
+                className="
+                  w-full
+                  h-full
+                  flex
+                  items-center
+                  justify-center
+                  bg-primary
+                  rounded-2xl
+                  mb-8
+                  "
+              >
+                <Image
+                  src="https://media.istockphoto.com/vectors/cartoon-people-on-music-festival-vector-illustration-flat-characters-vector-id1219009474?k=20&m=1219009474&s=170667a&w=0&h=GUxYezSG8W05khRiAiIQWpIZIAfeMweVCLCrSvItcZc="
+                  width={600}
+                  height={290}
                 />
               </div>
               <h4 className="font-semibold text-xl text-dark mb-3">Campeonatos</h4>
