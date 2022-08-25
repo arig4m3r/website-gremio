@@ -45,8 +45,8 @@ export default function Features() {
             >
               <div
                 className="
-                  w-[70px]
-                  h-[70px]
+                  w-full
+                  h-full
                   flex
                   items-center
                   justify-center
@@ -56,7 +56,7 @@ export default function Features() {
                   "
               >
                 <Image
-                  src="https://sm.ign.com/ign_br/screenshot/default/025pikachu-os-anime-4_3pym.png"
+                  src="https://http2.mlstatic.com/D_NQ_NP_795917-MLB32627700806_102019-O.jpg"
                   width={500}
                   height={500}
                 />
@@ -82,8 +82,8 @@ export default function Features() {
             >
               <div
                 className="
-                  w-[70px]
-                  h-[70px]
+                  w-full
+                  h-full
                   flex
                   items-center
                   justify-center
@@ -119,8 +119,8 @@ export default function Features() {
             >
               <div
                 className="
-                  w-[70px]
-                  h-[70px]
+                  w-full
+                  h-full
                   flex
                   items-center
                   justify-center
