@@ -93,7 +93,7 @@ export default function Features() {
                   "
               >
                 <Image
-                  src="https://media.istockphoto.com/vectors/cartoon-people-on-music-festival-vector-illustration-flat-characters-vector-id1219009474?k=20&m=1219009474&s=170667a&w=0&h=GUxYezSG8W05khRiAiIQWpIZIAfeMweVCLCrSvItcZc="
+                  src="https://blog.sympla.com.br/wp-content/uploads/2022/06/como-organizar-um-campeonato-de-video-game-capa-2.png"
                   width={600}
                   height={290}
                 />
