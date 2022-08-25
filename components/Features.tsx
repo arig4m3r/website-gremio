@@ -9,7 +9,7 @@ export default function Features() {
           <div className="w-full px-4">
             <div className="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
               <span className="font-semibold text-lg text-primary mb-2 block">
-                Nossa metas
+                Nossas metas
               </span>
               <h2
                 className="
@@ -24,10 +24,7 @@ export default function Features() {
                 O que oferecemos
               </h2>
               <p className="text-base text-body-color">
-                Existem muitas metas Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Assumenda nemo cupiditate harum ipsum laborum,
-                possimus sint et adipisci est expedita facere impedit, cum
-                maxime aspernatur in quasi nisi suscipit nobis?
+                Veja abaixo algumas de nossas metas que iremos cumprir durante o nosso trageto no Grêmio.
               </p>
             </div>
           </div>
@@ -66,7 +63,7 @@ export default function Features() {
               </div>
               <h4 className="font-semibold text-xl text-dark mb-3">Campeonatos</h4>
               <p className="text-body-color">
-                Realizar campeonato de games, interclasses, cartas, e leitura coletiva; 
+                Realizar campeonato de games, interclasses, cartas, e leitura coletiva
               </p>
             </div>
           </div>
@@ -101,12 +98,9 @@ export default function Features() {
                   height={500}
                 />
               </div>
-              <h4 className="font-semibold text-xl text-dark mb-3">Função 2</h4>
+              <h4 className="font-semibold text-xl text-dark mb-3">Festivais</h4>
               <p className="text-body-color">
-                Descrição da função 2 aqui! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Explicabo eligendi, ut numquam
-                dolores exercitationem unde alias! Rerum nobis aperiam, dolores,
-                nam enim provident a modi ut laudantium ad ab praesentium.
+                Festivais de Dança, Músicas, Desfile, Teatro, Mimicas
               </p>
             </div>
           </div>
@@ -141,12 +135,10 @@ export default function Features() {
                   height={500}
                 />
               </div>
-              <h4 className="font-semibold text-xl text-dark mb-3">Função 3</h4>
+              <h4 className="font-semibold text-xl text-dark mb-3">Feiras</h4>
               <p className="text-body-color">
-                Descrição da função 3 aqui! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Explicabo eligendi, ut numquam
-                dolores exercitationem unde alias! Rerum nobis aperiam, dolores,
-                nam enim provident a modi ut laudantium ad ab praesentium.
+              Promover feira de ciências, evento aberto ao público para interagir escola e comunidade; e 
+              também, buscar parcerias com profissionais para garantir a sustentabilidade;
               </p>
             </div>
           </div>
