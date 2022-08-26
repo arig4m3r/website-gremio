@@ -27,6 +27,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-markdown: 8.0.3_ug65io7jkbhmo4fihdmbrh3ina
   remark-gfm: 3.0.1
+  rehype-katex: 8.0.3
 
 devDependencies:
   '@svgr/webpack': 6.3.1
