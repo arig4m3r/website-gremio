@@ -10,6 +10,7 @@ export async function fetchPosts() {
         slug
         id
         title
+        description
         coverImage {
           url
           height

@@ -10,6 +10,7 @@ export async function fetchSinglePost(slug: string | string[]) {
         slug
         id
         title
+        description
         coverImage {
           url
           height
@@ -17,8 +18,6 @@ export async function fetchSinglePost(slug: string | string[]) {
         }
         content {
           markdown
-          html
-          raw
         }
         publishedBy {
           name

@@ -25,7 +25,7 @@ export default function PostList() {
           key={post.slug}
           slug={post.slug}
           title={post.title}
-          description={post.content.markdown}
+          description={post.description}
           image_cover={post.coverImage.url}
         />
       ))}
