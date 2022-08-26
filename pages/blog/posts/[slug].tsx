@@ -1,8 +1,10 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
 import { fetchSinglePost } from "../../../util/fetchSinglePost";
+import gfm from "remark-gfm";
 
 interface Post {
   slug: string;
@@ -19,8 +21,8 @@ interface CoverImage {
 
 interface Content {
   html: string;
-  markdown: number;
-  raw: number;
+  markdown: string;
+  raw: string;
 }
 
 export default function index() {
@@ -43,9 +45,17 @@ export default function index() {
         {post?.title}
       </h1>
 
-      <p className="text-xl font-medium flex justify-center p-5">
+      <div className="flex justify-center text-2xl">
+        <p>
+          <ReactMarkdown remarkPlugins={[gfm]}>
+            {post ? post?.content.markdown : ""}
+          </ReactMarkdown>
+        </p>
+      </div>
+
+      {/* <p className="text-xl font-medium flex justify-center p-5">
         {post?.content.html}
-      </p>
+      </p> */}
       <Footer />
     </>
   );
