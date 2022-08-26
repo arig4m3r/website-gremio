@@ -5,6 +5,10 @@ import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
 import { fetchSinglePost } from "../../../util/fetchSinglePost";
 import gfm from "remark-gfm";
+import rehypeKatex from 'rehype-katex'
+
+import 'katex/dist/katex.min.css'
+
 
 interface Post {
   slug: string;
@@ -48,8 +52,12 @@ function PostPage() {
 
       <div className="flex justify-center text-2xl">
         <p>
-          <ReactMarkdown remarkPlugins={[gfm]}>
-            {post ? post?.content.markdown : ""}
+          <ReactMarkdown
+            children={`Teste`}
+            remarkPlugins={[gfm]}
+            rehypePlugins={[rehypeKatex]}
+          >
+            {/*{post ? post?.content.markdown : ""}*/}
           </ReactMarkdown>
         </p>
       </div>
