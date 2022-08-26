@@ -6,9 +6,6 @@ import Navbar from "../../../components/Navbar";
 import { fetchSinglePost } from "../../../util/fetchSinglePost";
 import gfm from "remark-gfm";
 
-import 'katex/dist/katex.min.css'
-
-
 interface Post {
   slug: string;
   title: string;
