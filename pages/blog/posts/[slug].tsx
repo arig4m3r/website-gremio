@@ -48,7 +48,7 @@ function PostPage() {
 
       <div className="flex justify-center text-2xl">
         {/*<p dangerouslySetInnerHTML={{__html: post ? post?.content.html : ''}}></p>*/}
-        <p>
+        {/*<p> */}
           <ReactMarkdown
             remarkPlugins={[gfm]}
             rehypePlugins={[rehypeKatex]}
@@ -56,7 +56,7 @@ function PostPage() {
           >
             {post ? post?.content.markdown : ""}
           </ReactMarkdown>
-        </p>
+        {/*</p> */}
         
       </div>
 
