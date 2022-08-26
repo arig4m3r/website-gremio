@@ -18,6 +18,7 @@ export async function fetchSinglePost(slug: string | string[]) {
         }
         content {
           markdown
+          html
         }
         publishedBy {
           name
