@@ -7,12 +7,11 @@ export default function Navbar() {
       <nav className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center">
         <div className="flex items-center justify-between">
           <div>
-            <a
-              className="text-2xl font-bold text-gray-800 lg:text-3xl hover:text-gray-700"
-              href="#"
-            >
-              Gremio Guimarães Rosa
-            </a>
+            <Link href="/" passHref>
+              <a className="text-2xl font-bold text-gray-800 lg:text-3xl hover:text-gray-700">
+                Gremio Guimarães Rosa
+              </a>
+            </Link>
           </div>
 
           <div className="flex lg:hidden">
@@ -32,31 +31,30 @@ export default function Navbar() {
         </div>
 
         <div className="flex flex-col mt-4 space-y-2 lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0">
-          <Link href="/">
+          <Link href="/" passHref>
             <a className="text-gray-700 lg:px-6 hover:text-blue-500">Inicio</a>
           </Link>
-          <Link href="/blog">
+          <Link href="/blog" passHref>
             <a className="text-gray-700 lg:px-6 hover:text-blue-500">Blog</a>
           </Link>
-          <Link href="/">
+          <Link href="/" passHref>
             <a className="text-gray-700 lg:px-6 hover:text-blue-500">Metas</a>
           </Link>
-          <Link href="/">
+          <Link href="/" passHref>
             <a className="text-gray-700 lg:px-6 hover:text-blue-500">
               História
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/" passHref>
             <a className="text-gray-700 lg:px-6 hover:text-blue-500">Suporte</a>
           </Link>
         </div>
 
-        <a
-          className="block h-10 px-5 py-2 mt-4 text-sm text-center text-gray-700 capitalize transition-colors duration-200 transform border rounded-md hover:bg-gray-100 lg:w-auto"
-          href="#"
-        >
-          Fale conosco
-        </a>
+        <Link href="/" passHref>
+          <a className="block h-10 px-5 py-2 mt-4 text-sm text-center text-gray-700 capitalize transition-colors duration-200 transform border rounded-md hover:bg-gray-100 lg:w-auto">
+            Fale conosco
+          </a>
+        </Link>
       </nav>
     </div>
   );
