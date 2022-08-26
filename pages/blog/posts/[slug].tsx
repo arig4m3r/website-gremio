@@ -47,16 +47,17 @@ function PostPage() {
       </h1>
 
       <div className="flex justify-center text-2xl">
-        <p dangerouslySetInnerHTML={{__html: post ? post?.content.html : ''}}></p>
-        {/*<<p>
-          ReactMarkdown
+        {/*<p dangerouslySetInnerHTML={{__html: post ? post?.content.html : ''}}></p>*/}
+        <p>
+          <ReactMarkdown
             remarkPlugins={[gfm]}
             rehypePlugins={[rehypeKatex]}
+            className={"prose lg:prose-xl"}
           >
             {post ? post?.content.markdown : ""}
-  </ReactMarkdown>
+          </ReactMarkdown>
         </p>
-        */}
+        
       </div>
 
       {/* <p className="text-xl font-medium flex justify-center p-5">
