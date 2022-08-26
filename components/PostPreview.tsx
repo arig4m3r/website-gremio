@@ -16,7 +16,7 @@ export default function PostPreview({
 }: Props) {
   return (
     <a
-      href={`/posts/${slug}`}
+      href={`/blog/posts/${slug}`}
       className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-full hover:bg-gray-100"
     >
       <Image
