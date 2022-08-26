@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Grêmio - Guimaraes Rosa</title>
       </Head>
-      
+
       <Navbar />
       <HeroCard />
       <Divider />
