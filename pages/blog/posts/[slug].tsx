@@ -41,7 +41,7 @@ function PostPage() {
   return (
     <>
       <Navbar />
-      <img src={post?.coverImage.url} className="h-24 w-full object-cover" alt="Blog post image" />
+      <img src={post?.coverImage.url} className="h-48 w-full object-cover" alt="Blog post image" />
       <h1 className="text-3xl font-bold flex justify-center p-5">
         {post?.title}
       </h1>
