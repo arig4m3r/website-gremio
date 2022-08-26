@@ -5,7 +5,6 @@ import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
 import { fetchSinglePost } from "../../../util/fetchSinglePost";
 import gfm from "remark-gfm";
-import rehypeKatex from 'rehype-katex'
 
 import 'katex/dist/katex.min.css'
 
