@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
 
 type Props = {
   slug: string;
@@ -31,7 +33,9 @@ export default function PostPreview({
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
           {title}
         </h5>
-        <p className="mb-3 font-normal text-gray-700 ">{description}</p>
+        <p className="mb-3 font-normal text-gray-700 ">
+          <ReactMarkdown remarkPlugins={[gfm]}>{description}</ReactMarkdown>
+        </p>
       </div>
     </a>
   );
