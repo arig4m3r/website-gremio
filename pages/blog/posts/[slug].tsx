@@ -25,7 +25,7 @@ interface Content {
   raw: string;
 }
 
-export default function index() {
+function PostPage() {
   const router = useRouter();
   const { slug } = router.query;
 
@@ -60,3 +60,5 @@ export default function index() {
     </>
   );
 }
+
+export default PostPage;
