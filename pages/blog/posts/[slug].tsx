@@ -51,7 +51,6 @@ function PostPage() {
         {/*<p> */}
           <ReactMarkdown
             remarkPlugins={[gfm]}
-            rehypePlugins={[rehypeKatex]}
             className={"prose lg:prose-xl"}
           >
             {post ? post?.content.markdown : ""}
