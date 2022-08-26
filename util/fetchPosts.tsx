@@ -18,7 +18,6 @@ export async function fetchPosts() {
         }
         content {
           markdown
-          html
         }
         publishedBy {
           name

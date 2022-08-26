@@ -20,9 +20,7 @@ interface CoverImage {
 }
 
 interface Content {
-  html: string;
   markdown: string;
-  raw: string;
 }
 
 function PostPage() {
@@ -47,21 +45,14 @@ function PostPage() {
       </h1>
 
       <div className="flex justify-center text-2xl">
-        {/*<p dangerouslySetInnerHTML={{__html: post ? post?.content.html : ''}}></p>*/}
-        {/*<p> */}
           <ReactMarkdown
             remarkPlugins={[gfm]}
             className={"prose lg:prose-xl"}
           >
             {post ? post?.content.markdown : ""}
           </ReactMarkdown>
-        {/*</p> */}
         
       </div>
-
-      {/* <p className="text-xl font-medium flex justify-center p-5">
-        {post?.content.html}
-      </p> */}
       <Footer />
     </>
   );
