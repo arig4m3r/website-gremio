@@ -46,7 +46,7 @@ function PostPage() {
         {post?.title}
       </h1>
 
-      <div className="flex justify-center text-2xl" dangerouslySetInnerHTML={{__html: post!.content.html}}>
+      <div className="flex justify-center text-2xl" dangerouslySetInnerHTML={{__html: post ? post?.content.html : ''}}>
         {/*<<p>
           ReactMarkdown
             remarkPlugins={[gfm]}
