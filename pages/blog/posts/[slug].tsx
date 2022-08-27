@@ -39,19 +39,19 @@ function PostPage() {
   return (
     <>
       <Navbar />
-      <img src={post?.coverImage.url} className="h-48 w-full object-cover" alt="Blog post image" />
+      <img
+        src={post?.coverImage.url}
+        className="h-64 w-full object-cover"
+        alt="Blog post image"
+      />
       <h1 className="text-3xl font-bold flex justify-center p-5">
         {post?.title}
       </h1>
 
       <div className="flex justify-center text-3xl">
-          <ReactMarkdown
-            remarkPlugins={[gfm]}
-            className={"prose lg:prose-xl"}
-          >
-            {post ? post?.content.markdown : ""}
-          </ReactMarkdown>
-        
+        <ReactMarkdown remarkPlugins={[gfm]} className={"prose lg:prose-xl"}>
+          {post ? post?.content.markdown : ""}
+        </ReactMarkdown>
       </div>
       <Footer />
     </>
