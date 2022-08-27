@@ -48,7 +48,7 @@ function PostPage() {
         {post?.title}
       </h1>
 
-      <div className="flex justify-center text-3xl">
+      <div className="flex justify-center text-3xl m-5 lg:m-0">
         <ReactMarkdown remarkPlugins={[gfm]} className={"prose lg:prose-xl"}>
           {post ? post?.content.markdown : ""}
         </ReactMarkdown>
