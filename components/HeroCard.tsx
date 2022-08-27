@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function HeroCard() {
-  const [value, setValue] = useState("");
+  const [type, setType] = useState("text");
 
-  const handleChange = (value: any) => {
-    console.log(value);
-  };
+  useEffect(() => {
+    setType(typeof window === "undefined" ? "text" : "email");
+  });
 
   return (
     <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
@@ -82,8 +82,9 @@ export default function HeroCard() {
               placeholder="Digite o seu endereço e-mail"
               className="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none focus:outline-none focus:placeholder-transparent focus:ring-0"
             /> */}
+
             <input
-              type={"text"}
+              type={type}
               // onChange={handleChange}
               // value={value}
               placeholder="Digite o seu endereço e-mail"
