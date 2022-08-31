@@ -20,9 +20,7 @@ interface CoverImage {
 }
 
 interface Content {
-  html: string;
   markdown: string;
-  raw: string;
 }
 
 function PostPage() {
@@ -41,22 +39,22 @@ function PostPage() {
   return (
     <>
       <Navbar />
-      <img src={post?.coverImage.url} className="h-48 w-full object-cover" alt="Blog post image" />
-      <h1 className="text-3xl font-bold flex justify-center p-5">
+      {post && (
+        <img
+          src={post?.coverImage.url}
+          className="h-64 w-full object-cover"
+          alt="Blog post image"
+        />
+      )}
+      <h1 className="text-3xl lg:text-4xl font-bold flex justify-center p-5 text-center">
         {post?.title}
       </h1>
 
-      <div className="flex justify-center text-2xl">
-        <p>
-          <ReactMarkdown remarkPlugins={[gfm]}>
-            {post ? post?.content.markdown : ""}
-          </ReactMarkdown>
-        </p>
+      <div className="flex justify-center text-3xl m-5 lg:m-0">
+        <ReactMarkdown remarkPlugins={[gfm]} className={"prose lg:prose-xl"}>
+          {post ? post?.content.markdown : ""}
+        </ReactMarkdown>
       </div>
-
-      {/* <p className="text-xl font-medium flex justify-center p-5">
-        {post?.content.html}
-      </p> */}
       <Footer />
     </>
   );

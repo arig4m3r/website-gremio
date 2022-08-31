@@ -37,6 +37,9 @@ export default function Navbar() {
           <Link href="/blog" passHref>
             <a className="text-gray-700 lg:px-6 hover:text-blue-500">Blog</a>
           </Link>
+          <Link href="/radio" passHref>
+            <a className="text-gray-700 lg:px-6 hover:text-blue-500">Radio</a>
+          </Link>
           <Link href="/" passHref>
             <a className="text-gray-700 lg:px-6 hover:text-blue-500">Metas</a>
           </Link>

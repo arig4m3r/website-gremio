@@ -19,7 +19,7 @@ export default function PostList() {
   }, []);
 
   return (
-    <div className="posts">
+    <div className="m-5 md:m-10">
       {response?.map((post: any) => (
         <PostPreview
           key={post.slug}
