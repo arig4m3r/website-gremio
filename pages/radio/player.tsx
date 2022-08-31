@@ -61,7 +61,6 @@ export default class player extends Component<IProps, IState> {
   handleVideo = (input: string) => {
     console.log(input)
     axios.post('https://gremioguimaraesrosa.vercel.app/api/addMusic', {
-      id: this.state.rows.length != 0 ? Math.max(...this.state.rows.map(o => o.id)) + 1 : 1,
       title: 'Adicionado por moderador',
       videoId: input,
       author: 'Moderador'
@@ -82,7 +81,7 @@ export default class player extends Component<IProps, IState> {
   receiveUpdateFromPusher() {
     channel.bind('music-request', (data: any) => {
       this.setState({
-        rows: [...this.state.rows, data]
+        rows: [...this.state.rows, { id: this.state.rows.length != 0 ? Math.max(...this.state.rows.map(o => o.id)) + 1 : 1, title: data.title, author: data.author, videoId: data.videoId }]
       })
     })
   }
