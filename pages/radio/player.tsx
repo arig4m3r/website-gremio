@@ -60,7 +60,7 @@ export default class player extends Component<IProps, IState> {
 
   handleVideo = (input: string) => {
     console.log(input)
-    axios.post('http://localhost:8080/add-music', {
+    axios.post('https://gremioguimaraesrosa.vercel.app/api/addMusic', {
       id: this.state.rows.length != 0 ? Math.max(...this.state.rows.map(o => o.id)) + 1 : 1,
       title: 'Adicionado por moderador',
       videoId: input,
