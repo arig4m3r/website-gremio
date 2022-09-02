@@ -1,10 +1,7 @@
 import React, { Fragment, ReactNode } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-export default function Layout(props: {
-  children: ReactNode;
-  deviceType: string;
-}) {
+export default function Layout(props: { children: ReactNode }) {
   // const UA = context.req.headers["user-agent"];
   // const isMobile = Boolean(
   //   UA.match(
