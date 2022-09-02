@@ -1,11 +1,16 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useMobileDetect from "../util/useMobileDetect";
 
 export default function Navbar() {
   const currentDevice = useMobileDetect();
 
-  const [active, setActive] = useState(!currentDevice.isMobile());
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    setActive(!currentDevice.isMobile());
+  }, [active, setActive]);
+
   return (
     <div>
       <nav className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center">
