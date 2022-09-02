@@ -1,10 +1,8 @@
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ReactMarkdown from "react-markdown";
-import Footer from "../../../components/Footer";
-import Navbar from "../../../components/Navbar";
 import { fetchSinglePost } from "../../../util/fetchSinglePost";
 import gfm from "remark-gfm";
+import Image from "next/image";
 
 interface Post {
   slug: string;
@@ -43,11 +41,15 @@ function PostPage({ post }: Props) {
   return (
     <>
       {post && (
-        <img
-          src={post?.coverImage.url}
-          className="h-64 w-full object-cover"
-          alt="Blog post image"
-        />
+        <div className="h-72 w-full relative">
+          <Image
+            src={post?.coverImage.url}
+            alt={`Imagem da escola`}
+            layout="fill"
+            objectFit="cover"
+            className="object-cover"
+          />
+        </div>
       )}
       <h1 className="text-3xl lg:text-4xl font-bold flex justify-center p-5 text-center">
         {post?.title}

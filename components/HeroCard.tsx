@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function HeroCard() {
@@ -102,11 +103,16 @@ export default function HeroCard() {
       </div>
 
       <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-        <img
-          className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl"
-          src="http://cdn.mixmc.com.br/gremio/escola.jpg"
-          alt="Imagem da escola"
-        />
+        <div className="relative w-full h-full">
+          {" "}
+          <Image
+            src={"http://cdn.mixmc.com.br/gremio/escola.jpg"}
+            alt={`Imagem da escola`}
+            layout="fill"
+            objectFit="cover"
+            className="mx-auto rounded-md lg:max-w-2xl"
+          />
+        </div>
       </div>
     </div>
   );
