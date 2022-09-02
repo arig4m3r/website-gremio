@@ -1,8 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import Footer from "../../../components/Footer";
-import Navbar from "../../../components/Navbar";
 import { fetchSinglePost } from "../../../util/fetchSinglePost";
 import gfm from "remark-gfm";
 
@@ -23,22 +21,18 @@ interface Content {
   markdown: string;
 }
 
-type Props = {
-  slug: any;
-  post: any;
-};
+function PostPage() {
+  const router = useRouter();
+  const { slug } = router.query;
 
-function PostPage({ post }: Props) {
-  //const slug = "o-desmatamento-e-seus-maleficios";
-
-  // const [post, setPost] = useState<Post>();
-  // useEffect(() => {
-  //   async function fetch() {
-  //     let res = await fetchSinglePost(slug!);
-  //     setPost(res.posts[0]);
-  //   }
-  //   if (slug) fetch();
-  // }, [slug]);
+  const [post, setPost] = useState<Post>();
+  useEffect(() => {
+    async function fetch() {
+      let res = await fetchSinglePost(slug!);
+      setPost(res.posts[0]);
+    }
+    if (slug) fetch();
+  }, [slug]);
 
   return (
     <>
@@ -60,27 +54,6 @@ function PostPage({ post }: Props) {
       </div>
     </>
   );
-}
-
-export const getStaticProps = async () => {
-  let res = await fetchSinglePost("o-desmatamento-e-seus-maleficios");
-  return {
-    props: {
-      post: res.posts[0],
-    },
-  };
-};
-
-export async function getStaticPaths() {
-  return {
-    paths: [
-      // String variant:
-      "/blog/posts/o-desmatamento-e-seus-maleficios",
-      // Object variant:
-      { params: { slug: "o-desmatamento-e-seus-maleficios" } },
-    ],
-    fallback: true,
-  };
 }
 
 export default PostPage;

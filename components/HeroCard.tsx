@@ -104,8 +104,8 @@ export default function HeroCard() {
       <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
         <img
           className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl"
-          src="https://portalprudentino.com.br/imagens/portal/etec_arruda_mel_1511277338.jpg"
-          alt="etec photo"
+          src="http://cdn.mixmc.com.br/gremio/escola.jpg"
+          alt="Imagem da escola"
         />
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Features() {
   return (
@@ -24,7 +24,8 @@ export default function Features() {
                 O que oferecemos
               </h2>
               <p className="text-base text-body-color">
-                Veja abaixo algumas de nossas metas que iremos cumprir durante o nosso trageto no Grêmio.
+                Veja abaixo algumas de nossas metas que iremos cumprir durante o
+                nosso trageto no Grêmio.
               </p>
             </div>
           </div>
@@ -56,15 +57,18 @@ export default function Features() {
                   "
               >
                 <Image
-                  src="https://blog.sympla.com.br/wp-content/uploads/2022/06/como-organizar-um-campeonato-de-video-game-capa-2.png"
+                  src="http://cdn.mixmc.com.br/gremio/campeonato_jogos.png"
                   width={600}
                   height={290}
-                  alt={'Imagem ilustrativa de um campeonato de jogos virtuais'}
+                  alt={"Imagem ilustrativa de um campeonato de jogos virtuais"}
                 />
               </div>
-              <h4 className="font-semibold text-xl text-dark mb-3">Campeonatos</h4>
+              <h4 className="font-semibold text-xl text-dark mb-3">
+                Campeonatos
+              </h4>
               <p className="text-body-color">
-                Realizar campeonato de games, interclasses, cartas, e leitura coletiva
+                Realizar campeonato de games, interclasses, cartas, e leitura
+                coletiva
               </p>
             </div>
           </div>
@@ -94,13 +98,15 @@ export default function Features() {
                   "
               >
                 <Image
-                  src="https://media.istockphoto.com/vectors/cartoon-people-on-music-festival-vector-illustration-flat-characters-vector-id1219009474?k=20&m=1219009474&s=170667a&w=0&h=GUxYezSG8W05khRiAiIQWpIZIAfeMweVCLCrSvItcZc="
+                  src="http://cdn.mixmc.com.br/gremio/festival.png"
                   width={600}
                   height={290}
-                  alt={'Imagem ilustrativa de um festival'}
+                  alt={"Imagem ilustrativa de um festival"}
                 />
               </div>
-              <h4 className="font-semibold text-xl text-dark mb-3">Festivais</h4>
+              <h4 className="font-semibold text-xl text-dark mb-3">
+                Festivais
+              </h4>
               <p className="text-body-color">
                 Festivais de Dança, Músicas, Desfile, Teatro, Mimicas
               </p>
@@ -132,16 +138,17 @@ export default function Features() {
                   "
               >
                 <Image
-                  src="https://static.vecteezy.com/ti/vetor-gratis/p3/202093-feira-de-ciencias-2es-gr%C3%A1tis-vetor.jpg"
-                  width={933}
-                  height={632}
-                  alt={'Imagem ilustrativa de uma feira de ciencias'}
+                  src="http://cdn.mixmc.com.br/gremio/ciencias.jpg"
+                  width={600}
+                  height={290}
+                  alt={"Imagem ilustrativa de um festival"}
                 />
               </div>
               <h4 className="font-semibold text-xl text-dark mb-3">Feiras</h4>
               <p className="text-body-color">
-              Promover feira de ciências, evento aberto ao público para interagir escola e comunidade; e 
-              também, buscar parcerias com profissionais para garantir a sustentabilidade
+                Promover feira de ciências, evento aberto ao público para
+                interagir escola e comunidade; e também, buscar parcerias com
+                profissionais para garantir a sustentabilidade
               </p>
             </div>
           </div>

@@ -3,12 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: [
-      "blog.sympla.com.br",
-      "media.istockphoto.com",
-      "static.vecteezy.com",
-      "media.graphassets.com",
-    ],
+    domains: ["cdn.mixmc.com.br", "media.graphassets.com"],
   },
 };
 
