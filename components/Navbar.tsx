@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import useMobileDetect from "../util/useMobileDetect";
+import LoginButton from "./LoginButton";
 
 export default function Navbar() {
   const currentDevice = useMobileDetect();
@@ -64,11 +65,13 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <Link href="/" passHref>
+      {/* <Link href="/" passHref>
         <a className="block h-10 px-5 py-2 mt-4 text-sm text-center text-gray-700 capitalize transition-colors duration-200 transform border rounded-md hover:bg-gray-100 lg:w-auto">
           Fale conosco
         </a>
-      </Link>
+      </Link> */}
+
+      <LoginButton />
     </nav>
   );
 }
