@@ -10,7 +10,7 @@ export default function Navbar() {
 
   useEffect(() => {
     setActive(!currentDevice.isMobile());
-  }, []);
+  }, [currentDevice]);
 
   return (
     <nav className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center">

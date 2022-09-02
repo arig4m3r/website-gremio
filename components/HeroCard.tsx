@@ -6,7 +6,7 @@ export default function HeroCard() {
 
   useEffect(() => {
     setType(typeof window === "undefined" ? "text" : "email");
-  });
+  }, []);
 
   return (
     <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
