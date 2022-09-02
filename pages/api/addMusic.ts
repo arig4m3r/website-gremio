@@ -10,13 +10,7 @@ const pusher = new Pusher({
   useTLS: true,
 });
 
-type Data = {
-  name: string;
-};
-
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   pusher.trigger("gremio-website", "music-request", req.body);
+  return { error: null, message: "Added music" };
 }

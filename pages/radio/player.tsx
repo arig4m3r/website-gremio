@@ -5,7 +5,7 @@ import MusicQueue from "../../components/MusicQueue";
 import Pusher from "pusher-js";
 import axios from "axios";
 
-const pusher = new Pusher("38000fe8ad1be55a3924", {
+const pusher = new Pusher(process.env.PUSHER_KEY!, {
   cluster: "sa1",
   forceTLS: true,
 });
@@ -66,6 +66,9 @@ export default class player extends Component<IProps, IState> {
         title: "Adicionado por moderador",
         videoId: input,
         author: "Moderador",
+      })
+      .then((res: any) => {
+        console.log(res);
       })
       .catch((error: any) => {
         throw error;
