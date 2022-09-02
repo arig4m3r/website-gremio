@@ -5,7 +5,7 @@ import MusicQueue from "../../components/MusicQueue";
 import Pusher from "pusher-js";
 import axios from "axios";
 
-const pusher = new Pusher(process.env.PUSHER_KEY!, {
+const pusher = new Pusher(process.env.NEXT_PUBLIC_PUSHER_KEY!, {
   cluster: "sa1",
   forceTLS: true,
 });
