@@ -9,7 +9,7 @@ export default function Navbar() {
 
   useEffect(() => {
     setActive(!currentDevice.isMobile());
-  }, [active, setActive]);
+  }, []);
 
   return (
     <div>
