@@ -1,5 +1,4 @@
 import React, { useState, Component } from "react";
-import Navbar from "../../components/Navbar";
 import YoutubeSearchBox from "../../components/YoutubeSearchBox";
 import Youtube from "react-youtube";
 import MusicQueue from "../../components/MusicQueue";
@@ -47,12 +46,6 @@ export default class player extends Component<IProps, IState> {
           id: 1,
           title: "Never Gonna Give You Up",
           videoId: "dQw4w9WgXcQ",
-          author: "Ari Rocha",
-        },
-        {
-          id: 2,
-          title: "Apenas um teste",
-          videoId: "11S5tcT2Tm0",
           author: "Ari Rocha",
         },
       ],
@@ -106,7 +99,6 @@ export default class player extends Component<IProps, IState> {
   render() {
     return (
       <div>
-        <Navbar />
         <YoutubeSearchBox onSubmit={this.handleVideo} />
         {this.state.rows.at(0) && (
           <Youtube

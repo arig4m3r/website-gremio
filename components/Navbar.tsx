@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import { isMobile } from "react-device-detect";
 
 export default function Navbar() {
+  let active = !isMobile;
   return (
     <div>
       <nav className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center">
@@ -30,7 +32,11 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="flex flex-col mt-4 space-y-2 lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0">
+        <div
+          className={`${
+            active ? "" : "hidden"
+          }  flex flex-col mt-4 space-y-2 lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0`}
+        >
           <Link href="/" passHref>
             <a className="text-gray-700 lg:px-6 hover:text-blue-500">Inicio</a>
           </Link>

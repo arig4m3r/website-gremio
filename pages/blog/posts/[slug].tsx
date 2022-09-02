@@ -42,7 +42,6 @@ function PostPage({ post }: Props) {
 
   return (
     <>
-      <Navbar />
       {post && (
         <img
           src={post?.coverImage.url}
@@ -59,7 +58,6 @@ function PostPage({ post }: Props) {
           {post ? post?.content.markdown : ""}
         </ReactMarkdown>
       </div>
-      <Footer />
     </>
   );
 }

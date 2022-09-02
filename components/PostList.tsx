@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import { fetchPosts } from "../util/fetchPosts";
 import PostPreview from "./PostPreview";
 
 interface Post {

@@ -1,8 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import Footer from "../../../components/Footer";
-import Navbar from "../../../components/Navbar";
 import { fetchSinglePost } from "../../../util/fetchSinglePost";
 import gfm from "remark-gfm";
 
@@ -38,7 +36,6 @@ function PostPage() {
 
   return (
     <>
-      <Navbar />
       {post && (
         <img
           src={post?.coverImage.url}
@@ -55,7 +52,6 @@ function PostPage() {
           {post ? post?.content.markdown : ""}
         </ReactMarkdown>
       </div>
-      <Footer />
     </>
   );
 }
