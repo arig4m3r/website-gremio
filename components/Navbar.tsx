@@ -5,12 +5,16 @@ import LoginButton from "./LoginButton";
 
 export default function Navbar() {
   const currentDevice = useMobileDetect();
+  const [didLoad, setDidLoad] = useState<boolean>(false);
 
   const [active, setActive] = useState(false);
 
   useEffect(() => {
-    setActive(!currentDevice.isMobile());
-  }, [currentDevice]);
+    if (!didLoad) {
+      setActive(!currentDevice.isMobile());
+      setDidLoad(true);
+    }
+  }, [currentDevice, didLoad]);
 
   return (
     <nav className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center">
