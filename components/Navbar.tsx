@@ -1,9 +1,11 @@
 import Link from "next/link";
-import React from "react";
-import { isMobile } from "react-device-detect";
+import React, { useState } from "react";
+import useMobileDetect from "../util/useMobileDetect";
 
 export default function Navbar() {
-  let active = !isMobile;
+  const currentDevice = useMobileDetect();
+
+  const [active, setActive] = useState(!currentDevice.isMobile());
   return (
     <div>
       <nav className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center">
@@ -21,6 +23,7 @@ export default function Navbar() {
               type="button"
               className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
               aria-label="toggle menu"
+              onClick={() => setActive(!active)}
             >
               <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
                 <path
