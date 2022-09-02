@@ -1,5 +1,4 @@
 import React, { useState, Component } from "react";
-import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import YoutubeSearchBox from "../../components/YoutubeSearchBox";
 import Youtube from "react-youtube";
@@ -69,15 +68,11 @@ export default class player extends Component<IProps, IState> {
   };
 
   handleVideo = (input: string) => {
-    console.log(input);
     axios
       .post("https://gremioguimaraesrosa.vercel.app/api/addMusic", {
         title: "Adicionado por moderador",
         videoId: input,
         author: "Moderador",
-      })
-      .then((res: any) => {
-        console.log("Recebido pelo servidor");
       })
       .catch((error: any) => {
         throw error;

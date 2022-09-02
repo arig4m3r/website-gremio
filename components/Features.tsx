@@ -139,9 +139,9 @@ export default function Features() {
               >
                 <Image
                   src="http://cdn.mixmc.com.br/gremio/ciencias.jpg"
-                  width={933}
-                  height={632}
-                  alt={"Imagem ilustrativa de uma feira de ciencias"}
+                  width={600}
+                  height={290}
+                  alt={"Imagem ilustrativa de um festival"}
                 />
               </div>
               <h4 className="font-semibold text-xl text-dark mb-3">Feiras</h4>
