@@ -7,9 +7,7 @@ const nextConfig = {
       "cdn.mixmc.com.br",
       "media.graphassets.com",
       "avatars.githubusercontent.com",
-      "s1.googleusercontent.com",
-      "s2.googleusercontent.com",
-      "s3.googleusercontent.com",
+      "lh3.googleusercontent.com",
     ],
   },
 };
