@@ -1,22 +1,22 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
-import Pusher from 'pusher'
+import type { NextApiRequest, NextApiResponse } from "next";
+import Pusher from "pusher";
 
 const pusher = new Pusher({
-    appId: '1471045',
-    key: '38000fe8ad1be55a3924',
-    secret: '179bb0ac718045bf0351',
-    cluster: 'sa1',
-    useTLS: true
-})
+  appId: process.env.PUSHER_APPID!,
+  key: process.env.PUSHER_KEY!,
+  secret: process.env.PUSHER_SECRET!,
+  cluster: process.env.PUSHER_CLUSTER!,
+  useTLS: true,
+});
 
 type Data = {
-    name: string
-}
+  name: string;
+};
 
 export default function handler(
-    req: NextApiRequest,
-    res: NextApiResponse<Data>
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
 ) {
-    pusher.trigger('gremio-website', 'music-request', req.body)
+  pusher.trigger("gremio-website", "music-request", req.body);
 }
