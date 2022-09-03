@@ -8,7 +8,6 @@ export default function LoginButton() {
       <>
         Logado como {session.user!.email} <br />
         <div className="h-12 w-12 relative">
-          {" "}
           <Image
             src={session.user!.image!}
             alt={`Avatar de ${session.user?.name}`}

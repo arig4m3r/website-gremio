@@ -104,7 +104,6 @@ export default function HeroCard() {
 
       <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
         <div className="relative w-full h-full">
-          {" "}
           <Image
             src={"http://cdn.mixmc.com.br/gremio/escola.jpg"}
             alt={`Imagem da escola`}
