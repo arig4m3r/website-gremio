@@ -22,11 +22,7 @@ export default function SignIn({ providers }: { providers: any[] }) {
               Entre em sua conta
             </h2>
           </div>
-          <form
-            className="mt-8 space-y-6 bg-slate-200 p-5 rounded-xl"
-            action="#"
-            method="POST"
-          >
+          <div className="mt-8 space-y-6 bg-slate-200 p-5 rounded-xl">
             {Object.values(providers).map((provider) => (
               <div key={provider.name}>
                 <button
@@ -37,7 +33,7 @@ export default function SignIn({ providers }: { providers: any[] }) {
                 </button>
               </div>
             ))}
-          </form>
+          </div>
         </div>
       </div>
     </>
