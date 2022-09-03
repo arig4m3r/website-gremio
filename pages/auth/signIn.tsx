@@ -1,7 +1,10 @@
 import { getProviders, signIn } from "next-auth/react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function SignIn({ providers }: { providers: any[] }) {
+  const router = useRouter();
+
   return (
     <>
       <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -26,7 +29,11 @@ export default function SignIn({ providers }: { providers: any[] }) {
             {Object.values(providers).map((provider) => (
               <div key={provider.name}>
                 <button
-                  onClick={() => signIn(provider.id)}
+                  onClick={() =>
+                    signIn(provider.id, {
+                      callbackUrl: router.query.callbackUrl?.toString(),
+                    })
+                  }
                   className="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
                   Entrar com <strong className="px-1">{provider.name}</strong>
