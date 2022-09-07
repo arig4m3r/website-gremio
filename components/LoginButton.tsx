@@ -8,13 +8,15 @@ export default function LoginButton() {
       <>
         Logado como {session.user!.email} <br />
         <div className="h-12 w-12 relative">
-          <Image
-            src={session.user!.image!}
-            alt={`Avatar de ${session.user?.name}`}
-            layout="fill"
-            objectFit="cover"
-            className="rounded-full"
-          />
+          {session.user!.image && (
+            <Image
+              src={session.user!.image!}
+              alt={`Avatar de ${session.user?.name}`}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+            />
+          )}
         </div>
         <button
           onClick={() => signOut()}
