@@ -66,7 +66,7 @@ export default NextAuth({
     signIn: "/auth/signIn",
     verifyRequest: "/auth/checkEmail",
   },
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: process.env.NEXT_PUBLIC_SECRET,
 });
 
 function html(params: { url: string; host: string; theme: Theme }) {
