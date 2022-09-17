@@ -71,11 +71,11 @@ export default NextAuth({
 
 function html(params: { url: string; host: string; theme: Theme }) {
   const { url, host, theme } = params;
+  /* <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <!-- Compiled with Bootstrap Email version: 1.3.1 --><meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  return `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-  <head>
-    <!-- Compiled with Bootstrap Email version: 1.3.1 --><meta http-equiv="x-ua-compatible" content="ie=edge">
+  */
+  return `<head>
     <meta name="x-apple-disable-message-reformatting">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
@@ -93,12 +93,10 @@ function html(params: { url: string; host: string; theme: Theme }) {
               <tbody>
                 <tr>
                   <td align="center" style="line-height: 24px; font-size: 16px; margin: 0; padding: 0 16px;">
-                    <!--[if (gte mso 9)|(IE)]>
                       <table align="center" role="presentation">
                         <tbody>
                           <tr>
                             <td width="600">
-                    <![endif]-->
                     <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 600px; margin: 0 auto;">
                       <tbody>
                         <tr>
@@ -216,12 +214,10 @@ function html(params: { url: string; host: string; theme: Theme }) {
                         </tr>
                       </tbody>
                     </table>
-                    <!--[if (gte mso 9)|(IE)]>
                     </td>
                   </tr>
                 </tbody>
               </table>
-                    <![endif]-->
                   </td>
                 </tr>
               </tbody>
