@@ -3,10 +3,17 @@ import Image from "next/image";
 
 export default function LoginButton() {
   const { data: session } = useSession();
+
+  function capitalizeName(name: string) {
+    return name.replace(/\b(\w)/g, s => s.toUpperCase());
+  }  
+  
   if (session) {
+    let splitedMail = session.user!.email?.split('@')[0].split('.')!
+    let userName = `${capitalizeName(splitedMail[0])} ${capitalizeName(splitedMail[1])}`
     return (
       <>
-        Logado como {session.user!.email} <br />
+        {userName} <br />
         <div className="h-12 w-12 relative">
           {session.user!.image && (
             <Image

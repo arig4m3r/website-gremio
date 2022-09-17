@@ -56,7 +56,7 @@ export default function SignIn({ csrfToken }: { csrfToken: string }) {
             <form method="post" action="/api/auth/signin/email">
               <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
               <h3 className="text-xl font-bold text-gray-900 pb-3">
-                Seu e-mail institucional @etec.sp.gov.br
+                Seu e-mail institucional (@etec.sp.gov.br)
               </h3>
               <div className="pb-4">
                 <input
