@@ -64,7 +64,7 @@ export default function SignIn({ csrfToken }: { csrfToken: string }) {
                   name="email"
                   id="email"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                  placeholder="luis.felipe1234@etec.sp.gov.br"
+                  placeholder="luis.felipe92@etec.sp.gov.br"
                   required
                 />
               </div>
