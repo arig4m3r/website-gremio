@@ -9,7 +9,7 @@ export default function LoginButton() {
   }  
   
   if (session) {
-    let splitedMail = session.user!.email?.split('@')[0].split('.')!
+    let splitedMail = session.user!.email?.split('@')[0].replace(/[0-9]/g, '').split('.')!
     let userName = `${capitalizeName(splitedMail[0])} ${capitalizeName(splitedMail[1])}`
     return (
       <>
